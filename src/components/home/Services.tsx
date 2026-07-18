@@ -20,7 +20,7 @@ import {
 
 import SectionTitle from "@/components/common/SectionTitle";
 import Container from "@/components/common/Container";
-import { LucideIcon } from "lucide-react";
+
 
 type Service = {
   icon: LucideIcon;
