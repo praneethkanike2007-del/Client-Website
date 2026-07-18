@@ -106,24 +106,6 @@ return (
     </div>
   </section>
 );
-        <div className="text-center">
+        
 
-          <p className="uppercase tracking-[0.4em] text-yellow-600">
-            OUR COMPLETE MENU
-          </p>
-
-          <h2 className="mt-4 text-5xl font-bold">
-            Premium Beauty Services
-          </h2>
-
-          <p className="mx-auto mt-6 max-w-2xl text-gray-600">
-            Discover luxurious beauty treatments designed to
-            enhance your confidence and elegance.
-          </p>
-
-        </div>
-
-      </div>
-    </section>
-  );
-}
+    
