@@ -69,9 +69,7 @@ export default function About() {
               ))}
             </div>
 
-            <button className="mt-10 rounded-full bg-yellow-600 px-8 py-4 font-semibold text-white transition hover:bg-yellow-700">
-              Book Appointment
-            </button>
+          
           </div>
         </div>
       </Container>

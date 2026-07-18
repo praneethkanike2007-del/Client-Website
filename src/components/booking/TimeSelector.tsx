@@ -1,32 +1,46 @@
+type TimeSelectorProps = {
+  value: string;
+  onChange: (value: string) => void;
+};
+
 const timeSlots = [
-  "09:00 AM",
   "10:00 AM",
   "11:00 AM",
   "12:00 PM",
-  "02:00 PM",
-  "03:00 PM",
-  "04:00 PM",
-  "05:00 PM",
+  "1:00 PM",
+  "2:00 PM",
+  "3:00 PM",
+  "4:00 PM",
+  "5:00 PM",
+  "6:00 PM",
+  "7:00 PM",
+  "8:00 PM",
+  "9:00 PM"
 ];
 
-export default function TimeSelector() {
+export default function TimeSelector({
+  value,
+  onChange,
+}: TimeSelectorProps) {
   return (
     <div className="mt-8">
       <label className="mb-3 block text-lg font-semibold text-gray-800">
         Select Time
       </label>
 
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <select
+        value={value}
+        onChange={(e) => onChange(e.target.value)}
+        className="w-full rounded-xl border border-gray-300 bg-white p-4 text-gray-700 outline-none transition focus:border-yellow-500"
+      >
+        <option value="">Choose a time</option>
+
         {timeSlots.map((time) => (
-          <button
-            key={time}
-            type="button"
-            className="rounded-xl border border-gray-300 p-3 text-center transition hover:border-yellow-500 hover:bg-yellow-50"
-          >
+          <option key={time} value={time}>
             {time}
-          </button>
+          </option>
         ))}
-      </div>
+      </select>
     </div>
   );
 }

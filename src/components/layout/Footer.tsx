@@ -22,43 +22,66 @@ export default function Footer() {
 
           {/* Contact */}
 
-          <div>
-            <h3 className="mb-4 text-xl font-semibold text-yellow-400">
-              Contact
-            </h3>
+          {/* Contact */}
 
-            <p className="text-gray-400">
-              📍 Hyderabad, India
-            </p>
+<div>
+  <h3 className="mb-4 text-xl font-semibold text-yellow-400">
+    Contact
+  </h3>
 
-            <p className="mt-2 text-gray-400">
-              📞 +91 XXXXXXXXXX
-            </p>
+  <p className="text-gray-400">
+    📞 9014914278
+  </p>
 
-            <p className="mt-2 text-gray-400">
-              ✉ hello@ushine.com
-            </p>
-          </div>
+  <p className="mt-2 text-gray-400">
+    📞 6302969118
+  </p>
+
+  <div className="mt-4 space-y-2">
+
+    <a
+      href="https://maps.app.goo.gl/mnHKt4QGvrYGLWv39?g_st=aw"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block text-gray-400 transition hover:text-yellow-400"
+    >
+      📍 U-SHINE Branch 1
+    </a>
+
+    <a
+      href="https://maps.app.goo.gl/zNZxctbbWGja8yAQ8"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block text-gray-400 transition hover:text-yellow-400"
+    >
+      📍 U-SHINE Branch 2
+    </a>
+
+  </div>
+
+</div>
 
           {/* Business Hours */}
 
-          <div>
-            <h3 className="mb-4 text-xl font-semibold text-yellow-400">
-              Business Hours
-            </h3>
+          {/* Business Hours */}
 
-            <p className="text-gray-400">
-              Monday - Saturday
-            </p>
+<div>
+  <h3 className="mb-4 text-xl font-semibold text-yellow-400">
+    Working Hours
+  </h3>
 
-            <p className="text-gray-400">
-              10:00 AM - 8:00 PM
-            </p>
+  <p className="text-gray-400">
+    Every Day
+  </p>
 
-            <p className="mt-3 text-gray-500">
-              Sunday Closed
-            </p>
-          </div>
+  <p className="mt-2 text-gray-400">
+    10:00 AM – 9:00 PM
+  </p>
+
+  <p className="mt-3 text-gray-500">
+    Walk-ins & Appointments Welcome
+  </p>
+</div>
 
         </div>
 

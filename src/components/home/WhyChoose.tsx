@@ -1,30 +1,37 @@
 import Container from "@/components/common/Container";
 import SectionTitle from "@/components/common/SectionTitle";
 
+import {
+  Crown,
+  Sparkles,
+  Gem,
+  ShieldCheck,
+} from "lucide-react";
+
 const reasons = [
   {
     title: "Experienced Professionals",
     description:
       "Our beauty experts deliver personalized services with precision and care.",
-    icon: "💎",
+    icon: Crown,
   },
   {
     title: "Premium Products",
     description:
       "We use trusted salon-grade products for healthier skin and beautiful hair.",
-    icon: "🌸",
+    icon: Gem,
   },
   {
     title: "Luxury Ambience",
     description:
       "Relax in a peaceful and elegant environment designed exclusively for women.",
-    icon: "✨",
+    icon: Sparkles,
   },
   {
     title: "Affordable Luxury",
     description:
       "Premium beauty experiences at prices that offer exceptional value.",
-    icon: "💖",
+    icon: ShieldCheck,
   },
 ];
 
@@ -42,15 +49,22 @@ export default function WhyChoose() {
           {reasons.map((reason) => (
             <div
               key={reason.title}
-              className="rounded-3xl bg-white p-8 shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+              className="group rounded-[32px] border border-[#E8D8A8] bg-white/90 p-8 shadow-lg transition-all duration-500 hover:-translate-y-3 hover:border-[#C9A227] hover:shadow-2xl"
             >
-              <div className="mb-4 text-5xl">{reason.icon}</div>
+              <div className="mb-6 inline-flex rounded-2xl bg-gradient-to-br from-[#F8E8B8] to-[#C9A227] p-4 shadow-lg">
 
-              <h3 className="text-2xl font-semibold text-gray-900">
+  <reason.icon
+    size={34}
+    className="text-white"
+  />
+
+</div>
+
+              <h3 className="text-2xl font-bold text-[#111111] transition-colors duration-300 group-hover:text-[#C9A227]">
                 {reason.title}
               </h3>
 
-              <p className="mt-3 text-gray-600">
+              <p className="mt-4 leading-7 text-gray-600">
                 {reason.description}
               </p>
             </div>

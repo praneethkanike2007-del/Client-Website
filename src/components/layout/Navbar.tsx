@@ -26,21 +26,21 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 z-50 w-full transition-all duration-300 ${
-        scrolled
-          ? "bg-white/90 backdrop-blur-lg shadow-md"
+      className={`fixed top-0 left-0 z-50 w-full transition-all duration-500 ${
+                scrolled
+          ? "bg-white/80 backdrop-blur-2xl shadow-xl border-b border-white/30"
           : "bg-transparent"
       }`}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
         {/* Logo */}
 
-        <Link
-          href="/"
-          className="text-3xl font-bold tracking-widest text-yellow-700"
-        >
-          U-SHINE
-        </Link>
+        <a
+  href="#home"
+  className="text-4xl font-extrabold tracking-[0.35em] text-[#C9A227] transition-all duration-300 hover:scale-105"
+>
+  U-SHINE
+</a>
 
         {/* Desktop Menu */}
 
@@ -49,7 +49,7 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-semibold tracking-wide text-gray-700 transition hover:text-yellow-700"
+              className="relative text-sm font-semibold tracking-wide text-gray-700 transition-all duration-300 hover:text-[#C9A227] after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-[#C9A227] after:transition-all after:duration-300 hover:after:w-full"
             >
               {link.name}
             </a>
@@ -59,14 +59,16 @@ export default function Navbar() {
         {/* Buttons */}
 
         <div className="hidden items-center gap-4 md:flex">
-          <button className="rounded-full border border-yellow-700 px-5 py-2 text-sm font-semibold text-yellow-700 transition hover:bg-yellow-700 hover:text-white">
-            Call Now
-          </button>
+          <a
+  href="tel:+919014914278"
+  className="rounded-full border border-yellow-700 px-5 py-2 text-sm font-semibold text-yellow-700 transition-all duration-300 hover:scale-105 hover:bg-yellow-700 hover:text-white"
+>
+  📞 Call Now
+</a>
 
                     <Link
   href="/booking"
-  className="rounded-full bg-yellow-700 px-5 py-2 text-sm font-semibold text-white transition hover:bg-yellow-800"
->
+className=" premium-button rounded-full bg-[#C9A227] px-6 py-3 text-sm font-semibold tracking-wide text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:scale-105 hover:bg-[#B8921C] hover:shadow-2xl active:scale-95">
   Book Appointment
 </Link>
         </div>
