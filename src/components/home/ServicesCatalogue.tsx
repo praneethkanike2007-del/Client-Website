@@ -1,11 +1,7 @@
 "use client";
 
 export default function ServicesCatalogue() {
-  return (
-    <section
-      id="catalogue"
-      className="bg-[#faf7f2] py-24"
-    >
+  
         const categories = [
   {
     title: "Facials",
